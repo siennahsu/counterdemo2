@@ -1,6 +1,5 @@
-package com.example.counterdemo2;
+package com.example.counterdemo2.entity;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
 
@@ -29,6 +28,10 @@ public class Counter {
     }
 
     // define getter and setter
+    public int getId() {
+        return id;
+    }
+
     public String getCounterName() {
         return counterName;
     }

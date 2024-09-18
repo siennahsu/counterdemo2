@@ -1,5 +1,6 @@
-package com.example.counterdemo2;
+package com.example.counterdemo2.dao;
 
+import com.example.counterdemo2.entity.Counter;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.criteria.CriteriaBuilder;
@@ -16,6 +17,7 @@ public class CounterRepositoryCustomImpl implements CounterRepositoryCustom {
     @PersistenceContext
     private EntityManager entityManager;
 
+    @Override
     @Transactional
     public Counter findCounterByName(String counterName) {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
