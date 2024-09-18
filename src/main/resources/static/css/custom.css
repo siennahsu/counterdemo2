@@ -1,0 +1,13 @@
+body {
+  font-family: 'Verdana', sans-serif;
+}
+
+#bannerimage {
+  width: 100%; /* Full width */
+  height: 250px; /* Height adjusts proportionally */
+  background-image: url('/images/banner.png');
+  background-color: purple;
+  background-position: center;
+  background-size: cover; /* Ensure the image covers the entire width, maintaining aspect ratio */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
